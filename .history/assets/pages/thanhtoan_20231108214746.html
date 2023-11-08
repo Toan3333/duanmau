@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-main">
+            <div class="header-logo">
+              <a href="#">
+                <img src="../images/logo.svg" alt="" />
+              </a>
+            </div>
+            <form action="" class="header-form">
+              <div class="header-input">
+                <input type="text" placeholder="Tìm kiếm sản phẩm" />
+                <div class="header-input-icon">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+              </div>
+            </form>
+            <div class="header-auth">
+              <div class="header-auth__item">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="#" class="header-link">Yêu thích</a>
+              </div>
+              <div class="header-auth__item">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <a href="#" class="header-link">Tài khoản</a>
+              </div>
+              <div class="header-auth__item">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                <a href="#" class="header-link">Giỏ hàng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header end -->
+      <section class="header-bottom">
+        <div class="container">
+          <div class="header-bottom__main">
+            <ul class="header-menu">
+              <li class="header-menu-item">
+                <a href="/index.html" class="header-menu-link">Trang chủ</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/thietke.html" class="header-menu-link">Thiết kế</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/gioithieu.html" class="header-menu-link">Giới thiệu</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/sanpham.html" class="header-menu-link">Sản phẩm</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/tintuc.html" class="header-menu-link">Tin tức</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/lienhe.html" class="header-menu-link">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="checkout">
+        <div class="container">
+          <div class="checkout-center">
+            <div class="checkout-center-icon">
+              <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+            </div>
+            <div class="checkout-center-text">Thanh toán</div>
+            <p>Vui lòng kiểm tra thông tin khách hàng, đơn hàng trước khi thanh toán.</p>
+          </div>
+          <div class="checkout-main">
+            <div class="checkout-left">
+              <div class="order">
+                <h3 class="order-title">Thông tin đặt hàng</h3>
+                <form action="" class="order-form order-info">
+                  <input class="order-input" type="text" placeholder="Nhập họ tên" /> <br />
+                  <input class="order-input" type="text" placeholder="Nhập email" /> <br />
+                  <input class="order-input" type="text" placeholder="Nhập số điên thoại" /> <br />
+                  <input class="order-input" type="text" placeholder="Nhập địa chỉ" /> <br />
+                </form>
+                <div class="order-checkbox">
+                  <input type="checkbox" />
+                  Giao hàng đến địa chỉ khác
+                </div>
+              </div>
+              <div class="order-pt">
+                <h3 class="order-title">Phương thức giao hàng</h3>
+                <div class="radio">
+                  <input type="radio" id="radio1" name="group-radio" />
+                  <label for="radio1">Tốc độ tiêu chuẩn (từ 2 - 5 ngày làm việc)</label>
+                </div>
+              </div>
+              <div class="order-pt">
+                <h3 class="order-title">Phương thức thanh toán</h3>
+                <label class="container-radio"
+                  >Tốc độ tiêu chuẩn (từ 2 - 5 ngày làm việc)
+                  <input class="radio-input" type="radio" checked="checked" name="radio" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-radio"
+                  >Thanh toán bằng Thẻ quốc tế / Thẻ nội địa / QR Code
+                  <input type="radio" name="radio" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container-radio"
+                  >Thanh toán bằng ví MoMo
+                  <input type="radio" name="radio" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <!-- <form action="" class="order-form">
+                  <div class="order-radio">
+                    <div class="order-radio__group">
+                      <input type="radio" value="Thanh toán trực tiếp khi giao hàng" />
+                      <span></span>
+                    </div>
+                    <div class="order-radio-text">Thanh toán trực tiếp khi giao hàng</div>
+                  </div>
+                  <div class="order-radio">
+                    <div class="order-radio__group">
+                      <input
+                        type="radio"
+                        value="Thanh toán bằng Thẻ quốc tế / Thẻ nội địa / QR Code" />
+                      <span></span>
+                    </div>
+                    <div class="order-radio-text">
+                      Thanh toán bằng Thẻ quốc tế / Thẻ nội địa / QR Code
+                    </div>
+                  </div>
+                  <div class="order-radio">
+                    <div class="order-radio__group">
+                      <input type="radio" value="Thanh toán bằng ví MoMo" />
+                      <span></span>
+                    </div>
+                    <div class="order-radio-text">Thanh toán bằng ví MoMo</div>
+                  </div>
+                </form> -->
+              </div>
+            </div>
+            <div class="checkout-right">
+              <div class="checkout-right-box">
+                <div class="checkout-right-title-heading">Đơn hàng (1 sản phẩm)</div>
+                <div class="checkout-right-overflow">
+                  <div class="checkout-right-list">
+                    <div class="checkout-right-item">
+                      <div class="checkout-right-image">
+                        <img src="../images/product-1.png" alt="" />
+                      </div>
+                      <div class="checkout-right-content">
+                        <div class="checkout-right-title">Áo Thun Regular Glorious Hour</div>
+                        <div class="checkout-right-main">
+                          <div class="checkout-right-color">Màu: Xanh</div>
+                          <div class="checkout-right-size">Size: M</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkout-right-price">175.000đ</div>
+                  </div>
+                  <div class="checkout-right-list">
+                    <div class="checkout-right-item">
+                      <div class="checkout-right-image">
+                        <img src="../images/product-1.png" alt="" />
+                      </div>
+                      <div class="checkout-right-content">
+                        <div class="checkout-right-title">Áo Thun Regular Glorious Hour</div>
+                        <div class="checkout-right-main">
+                          <div class="checkout-right-color">Màu: Xanh</div>
+                          <div class="checkout-right-size">Size: M</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkout-right-price">175.000đ</div>
+                  </div>
+                </div>
+                <div class="voucher">
+                  <div class="voucher-list">
+                    <div class="voucher-item">
+                      <input type="text" placeholder="Nhập mã giảm giá" />
+                    </div>
+                    <div class="voucher-btn">
+                      <button class="voucher-button">Áp dụng</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-flex">
+                    <span> Tạm tính</span>
+                    <span>175.000đ</span>
+                  </div>
+                  <div class="form-flex">
+                    <span>Phí vận chuyển </span>
+                    <span>-</span>
+                  </div>
+                </div>
+                <div class="form-flex mt-10">
+                  <span class="checkout-total">Tổng cộng </span>
+                  <span>175.000đ</span>
+                </div>
+                <div class="form-flex back-flex mt-10">
+                  <div class="back-cart">
+                    <button>Quay về giỏ hàng</button>
+                  </div>
+                  <div class="voucher-btn button-primary__primary">
+                    <button class="voucher-button">Đặt hàng</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-box">
+            <div class="footer-box__title">Nhận thông tin khuyến mãi từ chúng tôi</div>
+            <form action="" class="footer-form">
+              <div class="footer-form__input">
+                <input class="form-control" type="text" placeholder="Nhập email của bạn " />
+                <div class="footer-form__submit">
+                  <button type="submit" class="footer-btn">Gửi</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="footer-list">
+            <div class="footer-column">
+              <div class="footer-logo">
+                <a href="#">
+                  <img src="../images/logo-footer.svg" alt="" />
+                </a>
+                <div class="footer-nav">
+                  <ul class="footer-menu">
+                    <li class="footer-item">
+                      <a href="#" class="footer-link"
+                        ><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Tầng 12, Nhà T, Quận 12, TPHCM
+                      </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#" class="footer-link"
+                        ><i class="fa fa-phone" aria-hidden="true"></i>
+                        123456789
+                      </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#" class="footer-link"
+                        ><i class="fa fa-google" aria-hidden="true"></i>
+                        ZStyle@gmail.com
+                      </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#" class="footer-link"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i>
+                        ZStyle
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Về chúng tôi</h4>
+              <ul class="footer-menus">
+                <li>
+                  <a href="#" class="footer-link">Trang chủ </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Giới thiệu</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Sản phẩm</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Hệ thống cửa hàng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Chính sách</h4>
+              <ul class="footer-menus">
+                <li>
+                  <a href="#" class="footer-link">Chính sách đối tác </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Chính sách đổi trả</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Chính sách thanh toán</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Chính sách giao hàng</a>
+                </li>
+              </ul>
+              <div class="footer-checkout">
+                <div class="footer-checkout__title">Hình thức thanh toán</div>
+                <div class="footer-checkout__icon">
+                  <img src="../images/napas.svg" alt="" />
+                  <img src="../images/zalopay-icon.svg" alt="" />
+                  <img src="../images/visa.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Tư vấn khách hàng</h4>
+              <ul class="footer-menus">
+                <li>
+                  <a href="#" class="footer-link">Mua hàng 12345678 </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Bản hành 12345678</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Khiếu nại 12345678</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Hỗ trợ 24/7</a>
+                </li>
+              </ul>
+              <div class="footer-checkout">
+                <div class="footer-checkout__title">Mua qua sàn TMDT</div>
+                <div class="footer-checkout__icon">
+                  <img class="footer-icon__image" src="../images/lazada.svg" alt="" />
+                  <img class="footer-icon__image" src="../images/sendo.svg" alt="" />
+                  <img class="footer-icon__image" src="../images/shopee.svg" alt="" />
+                  <img class="footer-icon__image" src="../images/tiki.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copy">Copyright © 2023 ZStyle. All rights reserved.</div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
