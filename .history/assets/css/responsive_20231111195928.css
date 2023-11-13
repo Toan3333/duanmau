@@ -1,0 +1,226 @@
+@media screen and (max-width: 767.98px) {
+  .header {
+    padding: 10px 0px;
+  }
+  .header-auth {
+    display: none;
+  }
+  .header-form {
+    display: none;
+  }
+  .header-logo {
+    display: none;
+  }
+  .header-logo-mobile {
+    width: 100px;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-bars {
+    display: block;
+    font-size: 20px;
+    color: var(--white);
+  }
+  .header-bad {
+    font-size: 20px;
+    color: var(--white);
+    display: block;
+  }
+  .header-form-mobile {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .header-logo-mobile {
+    display: block;
+  }
+  .heading-primary {
+    font-size: 24px;
+  }
+  .product-right {
+    display: none;
+  }
+  .product {
+    padding: 30px 0;
+  }
+  .product-list-2 {
+    grid-gap: 20px;
+  }
+  .product-title {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 22px;
+  }
+  .product-price {
+    font-size: 16px;
+  }
+  .deal {
+    padding: 40px 0px;
+  }
+  .deal-main {
+    flex-direction: column;
+  }
+  .deal-list {
+    flex-direction: column;
+  }
+  .deal-item__image {
+    background-color: #eee;
+    width: 100%;
+    max-width: unset;
+  }
+
+  .deal-items img {
+    width: 65px;
+    height: 65px;
+    background-color: #eee;
+  }
+  .deal-auth {
+    align-items: center;
+    justify-content: center;
+  }
+  .top {
+    padding: 20px 0;
+  }
+  .top-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 0;
+    margin-top: 20px;
+  }
+  .top-flex {
+    flex-direction: column;
+  }
+
+  .top-main-list {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 46%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+    margin-bottom: 10px;
+  }
+  .top-main-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .top-main-list > * {
+    scroll-snap-align: start;
+  }
+
+  .top-btn {
+    display: none;
+  }
+  .top-item-title {
+    display: none;
+  }
+  .top-item-title-mobile {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .product-box {
+    display: none;
+  }
+  .tab-item {
+    padding: 0;
+  }
+  .tab-menu {
+    gap: 20px;
+  }
+  .tab-link {
+    font-size: 14px;
+    padding: 0;
+  }
+  .tab-link.active {
+    padding: 10px 6px;
+  }
+  .product-box__list {
+    display: none;
+  }
+  .product-list {
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .service {
+    padding: 20px 0;
+  }
+  .service-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px 0;
+  }
+  .customer-main {
+    flex-direction: column;
+  }
+  .customer-banner {
+    display: none;
+  }
+  .product-list {
+    margin-top: 10px;
+  }
+
+  .customer-content {
+    position: relative;
+    background-image: url(../images/banner-intro.png);
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3;
+    padding: 40px;
+    height: 100%;
+    background-color: unset;
+  }
+  .customer-content::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #46694f;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: -999;
+  }
+  .customer-title {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .blog {
+    padding: 20px 0;
+  }
+  .blog-list {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 92%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+  .blog-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .blog-list > * {
+    scroll-snap-align: start;
+  }
+}

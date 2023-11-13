@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách sản phẩm</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-main">
+            <div class="header-logo">
+              <a href="#">
+                <img src="../images/logo.svg" alt="" />
+              </a>
+            </div>
+            <form action="" class="header-form">
+              <div class="header-input">
+                <input type="text" placeholder="Tìm kiếm sản phẩm" />
+                <div class="header-input-icon">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+              </div>
+            </form>
+            <div class="header-auth">
+              <div class="header-auth__item">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="#" class="header-link">Yêu thích</a>
+              </div>
+              <div class="header-auth__item">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                <a href="#" class="header-link">Tài khoản</a>
+              </div>
+              <div class="header-auth__item">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                <a href="#" class="header-link">Giỏ hàng</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header end -->
+      <section class="header-bottom">
+        <div class="container">
+          <div class="header-bottom__main">
+            <ul class="header-menu">
+              <li class="header-menu-item">
+                <a href="/index.html" class="header-menu-link">Trang chủ</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/thietke.html" class="header-menu-link">Thiết kế</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/gioithieu.html" class="header-menu-link">Giới thiệu</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/sanpham.html" class="header-menu-link">Sản phẩm</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/tintuc.html" class="header-menu-link">Tin tức</a>
+              </li>
+              <li class="header-menu-item">
+                <a href="../pages/lienhe.html" class="header-menu-link">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="banner">
+        <a href="#">
+          <img src="../images/banner-product.png" alt="" />
+        </a>
+      </div>
+      <section class="list-product">
+        <div class="container">
+          <div class="heading-primary">Danh sách sản phẩm</div>
+          <div class="list-product__main">
+            <div class="list-product__left">
+              <div class="list-product__left-aside">Danh mục sản phẩm</div>
+              <div class="list-product__left-aside-item">
+                <ul class="navbar-aside">
+                  <li class="navbar-list">
+                    <a href="#" class="navbar-link">Áo thể thao</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </li>
+                  <li class="navbar-list">
+                    <a href="#" class="navbar-link">Áo sơ mi</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </li>
+                  <li class="navbar-list">
+                    <a href="#" class="navbar-link">Áo khoác</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </li>
+                  <li class="navbar-list">
+                    <a href="#" class="navbar-link">Áo thun</a>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="list-product__left-aside">Bộ lọc sản phẩm</div>
+              <div class="list-product__box">
+                <div class="list-product-title">Chọn khoảng giá</div>
+                <div class="list-product-menu">
+                  <ul class="list-product-nav">
+                    <li class="list-product-item">
+                      <style>
+                        .checkbox-style {
+                          display: inline-flex;
+                          align-items: center;
+                          gap: 10px;
+                          cursor: pointer;
+                        }
+                        .checkbox-label {
+                          cursor: pointer;
+                        }
+                        .checkbox-style input {
+                          display: none;
+                        }
+                        .checkbox-box {
+                          width: 15px;
+                          height: 15px;
+                          border: 1px solid black;
+                          border-radius: 3px;
+                          padding: 0px;
+                          color: transparent;
+                          transition: all 0.2s linear;
+                          background-color: #fff;
+                        }
+                        .checkbox-input:checked + .checkbox-box {
+                          background-color: #466947;
+                          border-color: #6a5af9;
+                          color: white;
+                        }
+                      </style>
+                      <label for="checkbox" class="checkbox-style">
+                        <input
+                          type="checkbox"
+                          name="evondev"
+                          id="checkbox"
+                          class="checkbox-input" />
+                        <div class="checkbox-box">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                              clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <label for="checkbox" class="checkbox-label">Please check me</label>
+                      </label>
+                      <input type="checkbox" />
+                      Dưới 1 triệu
+                    </li>
+                    <li class="list-product-item">
+                      <input type="checkbox" />
+                      Từ 1 triệu - 2 triệu
+                    </li>
+                    <li class="list-product-item">
+                      <input type="checkbox" />
+                      Từ 2 triệu - 3 triệu
+                    </li>
+                    <li class="list-product-item">
+                      <input type="checkbox" />
+                      Từ 3 triệu - 5 triệu
+                    </li>
+                    <li class="list-product-item">
+                      <input type="checkbox" />
+                      Trên 5 triệu
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-product-title">Màu sắc</div>
+                <div class="list-product-colors">
+                  <span></span>
+                  <span class="color-1"></span>
+                  <span class="color-2"></span>
+                  <span class="color-3"></span>
+                  <span class="color-4"></span>
+                  <span class="color-5"></span>
+                  <span class="color-6"></span>
+                  <span class="color-7"></span>
+                  <span class="color-8"></span>
+                  <span class="color-9"></span>
+                </div>
+                <div class="list-product-title">Giới tính</div>
+                <div class="list-product-menu">
+                  <ul class="list-product-nav">
+                    <li class="list-product-item">
+                      <input type="checkbox" />
+                      Nam
+                    </li>
+                    <li class="list-product-item">
+                      <input type="checkbox" />
+                      Nữ
+                    </li>
+                    <li class="list-product-item">
+                      <input type="checkbox" />
+                      Unisex
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="banner-custom">
+                <a href="#">
+                  <img src="../images/banner-custom-1.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="list-product__right">
+              <div class="list-product-main">
+                <div class="list-text">Tất cả sản phẩm</div>
+                <div class="list-val">
+                  Sắp xếp theo <i class="fa updown-toggle fa-angle-down" aria-hidden="true"></i>
+                  <ul class="list-val-menu">
+                    <li class="list-val-list">
+                      <a href="#" class="list-val-link">Nam</a>
+                    </li>
+                    <li class="list-val-list">
+                      <a href="#" class="list-val-link">Nữ</a>
+                    </li>
+                    <li class="list-val-list">
+                      <a href="#" class="list-val-link">Trẻ em</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <section class="mt-10">
+                <div class="product-list list-product-items">
+                  <div class="product-item">
+                    <div class="product-images">
+                      <a href="#">
+                        <img src="../images/product-1.png" alt="" />
+                      </a>
+                      <div class="icons">
+                        <a href="#" class="views">Xem chi tiết</a>
+                        <a href="#" class="add">Mua ngay</a>
+                      </div>
+                    </div>
+                    <div class="product-title">Áo Thun Regular Bear Cool</div>
+                    <div class="product-price">290,000đ</div>
+                  </div>
+                  <div class="product-item">
+                    <div class="product-images">
+                      <a href="#">
+                        <img src="../images/product-2.png" alt="" />
+                      </a>
+                      <div class="icons">
+                        <a href="#" class="views">Xem chi tiết</a>
+                        <a href="#" class="add">Mua ngay</a>
+                      </div>
+                    </div>
+                    <div class="product-title">Áo Thun Regular Bear Cool</div>
+                    <div class="product-price">290,000đ</div>
+                  </div>
+                  <div class="product-item">
+                    <div class="product-images">
+                      <a href="#">
+                        <img src="../images/product-3.png" alt="" />
+                      </a>
+                      <div class="icons">
+                        <a href="#" class="views">Xem chi tiết</a>
+                        <a href="#" class="add">Mua ngay</a>
+                      </div>
+                    </div>
+                    <div class="product-title">Áo Thun Regular Bear Cool</div>
+                    <div class="product-price">290,000đ</div>
+                  </div>
+                  <div class="product-item">
+                    <div class="product-images">
+                      <a href="#">
+                        <img src="../images/product-4.png" alt="" />
+                      </a>
+                      <div class="icons">
+                        <a href="#" class="views">Xem chi tiết</a>
+                        <a href="#" class="add">Mua ngay</a>
+                      </div>
+                    </div>
+                    <div class="product-title">Áo Thun Regular Bear Cool</div>
+                    <div class="product-price">290,000đ</div>
+                  </div>
+                  <div class="product-item">
+                    <div class="product-images">
+                      <a href="#">
+                        <img src="../images/product-5.png" alt="" />
+                      </a>
+                      <div class="icons">
+                        <a href="#" class="views">Xem chi tiết</a>
+                        <a href="#" class="add">Mua ngay</a>
+                      </div>
+                    </div>
+                    <div class="product-title">Áo Thun Regular Bear Cool</div>
+                    <div class="product-price">290,000đ</div>
+                  </div>
+                  <div class="product-item">
+                    <div class="product-images">
+                      <a href="#">
+                        <img src="../images/product-6.png" alt="" />
+                      </a>
+                      <div class="icons">
+                        <a href="#" class="views">Xem chi tiết</a>
+                        <a href="#" class="add">Mua ngay</a>
+                      </div>
+                    </div>
+                    <div class="product-title">Áo Thun Regular Bear Cool</div>
+                    <div class="product-price">290,000đ</div>
+                  </div>
+                  <div class="product-item">
+                    <div class="product-images">
+                      <a href="#">
+                        <img src="../images/product-2.png" alt="" />
+                      </a>
+                      <div class="icons">
+                        <a href="#" class="views">Xem chi tiết</a>
+                        <a href="#" class="add">Mua ngay</a>
+                      </div>
+                    </div>
+                    <div class="product-title">Áo Thun Regular Bear Cool</div>
+                    <div class="product-price">290,000đ</div>
+                  </div>
+                  <div class="product-item">
+                    <div class="product-images">
+                      <a href="#">
+                        <img src="../images/product-3.png" alt="" />
+                      </a>
+                      <div class="icons">
+                        <a href="#" class="views">Xem chi tiết</a>
+                        <a href="#" class="add">Mua ngay</a>
+                      </div>
+                    </div>
+                    <div class="product-title">Áo Thun Regular Bear Cool</div>
+                    <div class="product-price">290,000đ</div>
+                  </div>
+                  <div class="product-item">
+                    <div class="product-images">
+                      <a href="#">
+                        <img src="../images/product-1.png" alt="" />
+                      </a>
+                      <div class="icons">
+                        <a href="#" class="views">Xem chi tiết</a>
+                        <a href="#" class="add">Mua ngay</a>
+                      </div>
+                    </div>
+                    <div class="product-title">Áo Thun Regular Bear Cool</div>
+                    <div class="product-price">290,000đ</div>
+                  </div>
+                </div>
+                <div class="product-pagination">
+                  <ul class="product-pagination-item">
+                    <li class="product-pagination-list">
+                      <a href="#" class="product-pagination-link active">1</a>
+                    </li>
+                    <li class="product-pagination-list">
+                      <a href="#" class="product-pagination-link">2</a>
+                    </li>
+                    <li class="product-pagination-list">
+                      <a href="#" class="product-pagination-link">3</a>
+                    </li>
+                    <li class="product-pagination-list">
+                      <a href="#" class="product-pagination-link">4</a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-box">
+            <div class="footer-box__title">Nhận thông tin khuyến mãi từ chúng tôi</div>
+            <form action="" class="footer-form">
+              <div class="footer-form__input">
+                <input class="form-control" type="text" placeholder="Nhập email của bạn " />
+                <div class="footer-form__submit">
+                  <button type="submit" class="footer-btn">Gửi</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="footer-list">
+            <div class="footer-column">
+              <div class="footer-logo">
+                <a href="#">
+                  <img src="../images/logo-footer.svg" alt="" />
+                </a>
+                <div class="footer-nav">
+                  <ul class="footer-menu">
+                    <li class="footer-item">
+                      <a href="#" class="footer-link"
+                        ><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Tầng 12, Nhà T, Quận 12, TPHCM
+                      </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#" class="footer-link"
+                        ><i class="fa fa-phone" aria-hidden="true"></i>
+                        123456789
+                      </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#" class="footer-link"
+                        ><i class="fa fa-google" aria-hidden="true"></i>
+                        ZStyle@gmail.com
+                      </a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="#" class="footer-link"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i>
+                        ZStyle
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Về chúng tôi</h4>
+              <ul class="footer-menus">
+                <li>
+                  <a href="#" class="footer-link">Trang chủ </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Giới thiệu</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Sản phẩm</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Hệ thống cửa hàng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Chính sách</h4>
+              <ul class="footer-menus">
+                <li>
+                  <a href="#" class="footer-link">Chính sách đối tác </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Chính sách đổi trả</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Chính sách thanh toán</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Chính sách giao hàng</a>
+                </li>
+              </ul>
+              <div class="footer-checkout">
+                <div class="footer-checkout__title">Hình thức thanh toán</div>
+                <div class="footer-checkout__icon">
+                  <img src="../images/napas.svg" alt="" />
+                  <img src="../images/zalopay-icon.svg" alt="" />
+                  <img src="../images/visa.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Tư vấn khách hàng</h4>
+              <ul class="footer-menus">
+                <li>
+                  <a href="#" class="footer-link">Mua hàng 12345678 </a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Bản hành 12345678</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Khiếu nại 12345678</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Hỗ trợ 24/7</a>
+                </li>
+              </ul>
+              <div class="footer-checkout">
+                <div class="footer-checkout__title">Mua qua sàn TMDT</div>
+                <div class="footer-checkout__icon">
+                  <img class="footer-icon__image" src="../images/lazada.svg" alt="" />
+                  <img class="footer-icon__image" src="../images/sendo.svg" alt="" />
+                  <img class="footer-icon__image" src="../images/shopee.svg" alt="" />
+                  <img class="footer-icon__image" src="../images/tiki.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copy">Copyright © 2023 ZStyle. All rights reserved.</div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/product.js"></script>
+  </body>
+</html>
