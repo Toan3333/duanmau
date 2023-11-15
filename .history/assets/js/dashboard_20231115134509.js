@@ -1,10 +1,11 @@
 const iconBar = document.querySelector(".icon-bar");
-const navigation = document.querySelector(".navigation");
-const main = document.querySelector(".main");
-iconBar.addEventListener("click", function () {
-  navigation.classList.toggle("active");
-  main.classList.toggle("active");
-});
+const menu = document.querySelector(".dashboard-menu");
+const dashboardLeft = document.querySelector(".dashboard-left");
+iconBar.addEventListener("click", handleShowMenu);
+function handleShowMenu() {
+  dashboardLeft.classList.toggle("active");
+  menu.classList.toggle("is-show");
+}
 const tabLinkItem = document.querySelectorAll(".dashboard-menu-link");
 const tabContents = document.querySelectorAll(".dashboard-content");
 [...tabLinkItem].forEach((item) => item.addEventListener("click", tablink));

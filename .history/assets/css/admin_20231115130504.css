@@ -120,49 +120,30 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
-.dashboard {
+/* .dashboard {
   position: relative;
   padding: 40px 0;
-}
-.dashboard-main {
+} */
+/* .dashboard-main {
   display: flex;
   justify-content: space-between;
-}
-.dashboard-left {
+} */
+/* .dashboard-left {
   max-width: 280px;
   width: 100%;
   display: none;
   transition: 0.25s linear;
+} */
+.dashboard-left {
+  width: 280px;
+  position: fixed;
+  height: 100%;
+  background-color: #f5f5f5;
 }
 .dashboard-left.active {
   display: block;
 }
-.navigation {
-  position: fixed;
-  width: 280px;
-  height: 100%;
-  background-color: #f5f5f5;
-  overflow: hidden;
-  transition: 0.25s;
-}
-.navigation.active {
-  width: 0;
-}
-.main {
-  position: absolute;
-  width: calc(100% - 280px);
-  left: 280px;
-  min-height: 100vh;
-  transition: 0.2s linear;
-}
-.main.active {
-  width: calc(100% - 0px);
-  left: 0;
-}
-.header-main {
-  background-color: #f5f5f5;
-  padding: 15px;
-}
+
 /* .dashboard-menu {
   transition: transform 0.25s linear;
   width: 280px;
@@ -174,7 +155,20 @@ body {
   bottom: 0;
   background-color: #f5f5f5;
 } */
-/* .dashboard-menu.is-show {
+.navbar,
+.main {
+  left: 280px;
+  width: calc(100% - 280px);
+}
+.navbar {
+  position: fixed;
+  padding: 25px;
+}
+.main {
+  width: 100%;
+  margin-top: 50px;
+}
+.dashboard-menu.is-show {
   transform: translateX(0);
 }
 .dashboard-left.show {
@@ -182,11 +176,6 @@ body {
 }
 .dashboard-menu.show {
   transform: translateX(0);
-} */
-.dashboard-menu-list:first-child {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
 }
 .dashboard-right {
   width: 100%;
@@ -376,6 +365,7 @@ body {
 .product thead tr th:nth-child(1) {
   width: 120px;
 }
+
 .product tbody tr td {
   text-align: center;
   border: 1px solid var(--text-heading);

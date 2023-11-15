@@ -295,6 +295,7 @@ body {
   color: white;
 }
 .footer {
+  position: relative;
   padding: 50px 0;
   background-color: #222;
 }

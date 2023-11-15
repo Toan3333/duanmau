@@ -153,7 +153,7 @@ body {
   width: calc(100% - 280px);
   left: 280px;
   min-height: 100vh;
-  transition: 0.2s linear;
+  transition: 0.5s;
 }
 .main.active {
   width: calc(100% - 0px);
