@@ -82,7 +82,7 @@ body {
   display: none;
 }
 .header-form {
-  margin-right: 0;
+  margin-right: 180px;
   width: 502px;
   padding-right: 16px;
 }
@@ -357,7 +357,7 @@ body {
 
 .heading-primary {
   color: var(--text-heading);
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 35px;
   text-align: center;
   font-weight: 500;
@@ -513,6 +513,7 @@ body {
   color: var(--text-heading);
   font-size: 20px;
   font-weight: 500;
+
   gap: 12px;
 }
 .product-price-left {
@@ -2250,7 +2251,7 @@ body {
   display: none;
 }
 .design h2 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 500;
   color: var(--text-heading);
 }
