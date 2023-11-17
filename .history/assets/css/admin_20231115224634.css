@@ -482,25 +482,13 @@ body {
 .comment thead tr th {
   text-align: center;
 }
-.modal,
-.modal-update {
+.modal {
   position: fixed;
   inset: 0;
   z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease;
-}
-.modal.active {
-  opacity: 1;
-  visibility: visible;
-}
-.modal-update.active {
-  opacity: 1;
-  visibility: visible;
 }
 .modal-overlay {
   position: absolute;
@@ -511,7 +499,7 @@ body {
 .modal-content {
   background-color: white;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   border-radius: 10px;
   position: relative;
   z-index: 10;
@@ -519,8 +507,8 @@ body {
 }
 .modal-close {
   position: absolute;
-  right: 30px;
-  top: 25px;
+  right: 0;
+  top: 0;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -538,36 +526,6 @@ body {
   color: var(--text-heading);
   font-weight: 600;
   margin-bottom: 15px;
+
   text-align: center;
-}
-.modal-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.modal-form-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.modal-form-item input,
-select {
-  width: 340px;
-  border-radius: 5px;
-  border: 1px solid #46694f;
-  height: 40px;
-}
-.modal-btn {
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 20px;
-}
-.modal-button {
-  border-radius: 5px;
-  background: #46694f;
-  padding: 12px 42px;
-  color: var(--white);
 }

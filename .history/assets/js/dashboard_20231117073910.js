@@ -69,7 +69,7 @@ function handleAddCategori() {
 
 function handleModalButton() {
   // modalClose.forEach((item) => removeClass(item, "active"));
-  modalCloses();
+  removeClass(element, className);
 }
 // const addCategori = document.querySelectorAll(".dashboard-add");
 // const modalClose = document.querySelectorAll(".modal-close");

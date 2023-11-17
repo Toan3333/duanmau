@@ -494,10 +494,7 @@ body {
   visibility: hidden;
   transition: all 0.2s ease;
 }
-.modal.active {
-  opacity: 1;
-  visibility: visible;
-}
+.modal,
 .modal-update.active {
   opacity: 1;
   visibility: visible;

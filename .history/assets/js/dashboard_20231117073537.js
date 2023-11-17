@@ -68,8 +68,7 @@ function handleAddCategori() {
 }
 
 function handleModalButton() {
-  // modalClose.forEach((item) => removeClass(item, "active"));
-  modalCloses();
+  modalClose.forEach((item) => removeClass("active"));
 }
 // const addCategori = document.querySelectorAll(".dashboard-add");
 // const modalClose = document.querySelectorAll(".modal-close");

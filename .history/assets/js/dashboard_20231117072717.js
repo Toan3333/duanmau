@@ -37,40 +37,6 @@ const modalUpdate = document.querySelector(classNames.modalUpdate);
 const modalAddPro = document.querySelector(classNames.modalAddPro);
 const modalEditPro = document.querySelector(classNames.modalEditPro);
 const edits = document.querySelectorAll(classNames.edit);
-
-function addClass(element, className) {
-  element.classList.add(className);
-}
-
-function removeClass(element, className) {
-  element.classList.remove(className);
-}
-addCategori.forEach((item) => item.addEventListener("click", themdanhmuc));
-modalClose.forEach((item) => item.addEventListener("click", modalCloses));
-edits.forEach((item) => item.addEventListener("click", handleAddCategori));
-modalButton.forEach((item) => item.addEventListener("click", handleModalButton));
-
-function themdanhmuc() {
-  addClass(modal, "active");
-  addClass(modalAddPro, "active");
-}
-
-function modalCloses() {
-  removeClass(modal, "active");
-  removeClass(modalUpdate, "active");
-  removeClass(modalAddPro, "active");
-  removeClass(modalEditPro, "active");
-}
-
-function handleAddCategori() {
-  addClass(modalUpdate, "active");
-  addClass(modalEditPro, "active");
-}
-
-function handleModalButton() {
-  // modalClose.forEach((item) => removeClass(item, "active"));
-  modalCloses();
-}
 // const addCategori = document.querySelectorAll(".dashboard-add");
 // const modalClose = document.querySelectorAll(".modal-close");
 // const modal = document.querySelector(".modal");

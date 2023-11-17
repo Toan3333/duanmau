@@ -39,7 +39,7 @@ const modalEditPro = document.querySelector(classNames.modalEditPro);
 const edits = document.querySelectorAll(classNames.edit);
 
 function addClass(element, className) {
-  element.classList.add(className);
+  addCategori.classList.add("active");
 }
 
 function removeClass(element, className) {
@@ -58,7 +58,7 @@ function themdanhmuc() {
 function modalCloses() {
   removeClass(modal, "active");
   removeClass(modalUpdate, "active");
-  removeClass(modalAddPro, "active");
+  removeClass(modalPro, "active");
   removeClass(modalEditPro, "active");
 }
 
@@ -68,8 +68,7 @@ function handleAddCategori() {
 }
 
 function handleModalButton() {
-  // modalClose.forEach((item) => removeClass(item, "active"));
-  modalCloses();
+  modalClose.forEach((item) => removeClass(item, "active"));
 }
 // const addCategori = document.querySelectorAll(".dashboard-add");
 // const modalClose = document.querySelectorAll(".modal-close");

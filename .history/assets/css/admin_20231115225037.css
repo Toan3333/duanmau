@@ -482,25 +482,13 @@ body {
 .comment thead tr th {
   text-align: center;
 }
-.modal,
-.modal-update {
+.modal {
   position: fixed;
   inset: 0;
   z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease;
-}
-.modal.active {
-  opacity: 1;
-  visibility: visible;
-}
-.modal-update.active {
-  opacity: 1;
-  visibility: visible;
 }
 .modal-overlay {
   position: absolute;
@@ -519,8 +507,8 @@ body {
 }
 .modal-close {
   position: absolute;
-  right: 30px;
-  top: 25px;
+  right: 0;
+  top: 0;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -563,11 +551,10 @@ select {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 20px;
 }
 .modal-button {
   border-radius: 5px;
   background: #46694f;
-  padding: 12px 42px;
-  color: var(--white);
+  height: 50px;
+  padding: 8px 16px;
 }

@@ -482,8 +482,7 @@ body {
 .comment thead tr th {
   text-align: center;
 }
-.modal,
-.modal-update {
+.modal {
   position: fixed;
   inset: 0;
   z-index: 9999;
@@ -495,10 +494,6 @@ body {
   transition: all 0.2s ease;
 }
 .modal.active {
-  opacity: 1;
-  visibility: visible;
-}
-.modal-update.active {
   opacity: 1;
   visibility: visible;
 }

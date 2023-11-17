@@ -498,10 +498,6 @@ body {
   opacity: 1;
   visibility: visible;
 }
-.modal-update.active {
-  opacity: 1;
-  visibility: visible;
-}
 .modal-overlay {
   position: absolute;
   inset: 0;
